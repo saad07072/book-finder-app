@@ -1,0 +1,43 @@
+.about {
+    padding: 3rem 0;
+    background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)), url("../../components/images/book_shelf.png") center/cover no-repeat;
+    min-height: 75vh;
+    color: white;
+}
+
+.about-content {
+    gap: 4rem;
+    display: grid;
+    align-items: center;
+}
+
+.about-title {
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text p {
+    margin: 1.8rem 0;
+    opacity: 0.8;
+    color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+    .about-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-title {
+        margin-top: 0;
+    }
+    .about-img img {
+        max-width: 520px;
+        margin-left: 0;
+    }
+}
